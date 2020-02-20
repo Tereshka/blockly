@@ -313,7 +313,7 @@ Blockly.FieldDropdown.prototype.showEditor_ = function(opt_e) {
   this.applyColour();
 
   Blockly.Events.fire(
-    new Blockly.Events.Ui(null, 'editorOpen', false, true));
+    new Blockly.Events.Ui(this.sourceBlock_, 'editorOpen', false, true));
 };
 
 /**
